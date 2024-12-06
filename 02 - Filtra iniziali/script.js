@@ -5,22 +5,22 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 // Dichiara la funzione qui.
 const array = (names) => {
-    let newarray = prompt("inserisci una lettera");
-    let arraynigger = [];
+    let userLetter = prompt("inserisci una lettera");
+    let newarray = [];
     for (let i = 0; i < names.length; i++) {
-      if (names[i][0].toLowerCase() === newarray.toLowerCase()) {
-        arraynigger.push(names[i]);
+      if (names[i][0].toLowerCase() === userLetter.toLowerCase()) {
+        newarray.push(names[i]);
       }
     }
-    return arraynigger;
+    return newarray;
   }
 
   let result = array(names);
 
   if (result.length > 0) {
-    console.log(result);
+    alert(result);
   } else {
-    console.log("la lettera non è nell'array coglione");
+    alert("la lettera non è nell'array coglione");
   }
 
 
